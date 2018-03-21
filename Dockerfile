@@ -12,4 +12,4 @@ RUN wget http://nlp.stanford.edu/software/$CORENLP_ARCHIVE \
 WORKDIR $CORENLP_PATH
 
 EXPOSE 9000
-CMD ["java", "-mx3g", "-cp", "*", "edu.stanford.nlp.pipeline.StanfordCoreNLPServer", "9000"]
+CMD ["java", "-mx7g", "-cp", "*", "edu.stanford.nlp.pipeline.StanfordCoreNLPServer", "9000"]
